@@ -1,0 +1,8 @@
+# Keep Jupyter notebooks readable and consistently stored.
+*.ipynb text eol=lf linguist-language=Jupyter
+
+# CHEOPS dataset files are serialised binary data, not line-based text.
+*.dataset binary
+
+# PDFs and generated plots should not be treated as text.
+*.pdf binary
