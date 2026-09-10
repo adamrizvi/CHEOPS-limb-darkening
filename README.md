@@ -6,7 +6,7 @@ An analysis of the stellar limb darkening parameters of some stars using open so
 
 A star appears brighter at its centre than near its visible edge, or limb. This effect is called limb darkening and results from a different thickness of stellar being viewed through, dependent on the distance from the centre of the stellar disc.
 
-This project models the transit of stars and estimates the power-2 limb darkening parameters, $h_1$ and $h_2$ [Maxted, 2018](https://www.aanda.org/articles/aa/pdf/2018/08/aa32944-18.pdf). The transit model is fitted using the `pycheops` pipeline and Markov Chain Monte Carlo (MCMC) sampling using `emcee`, both open source.
+This project models the transit of stars and estimates the power-2 limb darkening parameters, $h_1$ and $h_2$ [(Maxted, 2018)](https://www.aanda.org/articles/aa/pdf/2018/08/aa32944-18.pdf). The transit model is fitted using the `pycheops` pipeline and Markov Chain Monte Carlo (MCMC) sampling using `emcee`, both open source.
 
 ## Repository Contents
 
@@ -53,7 +53,7 @@ This analysis uses 64 random walkers and an HDF5 backend MCMC chain. The model i
 
 - Use a local virtual environment rather than a global Python installation (the `.venv` environment is recommended).
 - Run the notebook from the repository root so that its `stars/<TARGET>/data/` path resolves correctly.
-- The notebook fetches a CHEOPS-related catalogue from the public SWEET-Cat repository `(https://github.com/iastro-pt/SWEET-Cat/tree/master)`.
+- The notebook fetches a CHEOPS-related catalogue from the public [SWEET-Cat repository](https://github.com/iastro-pt/SWEET-Cat/tree/master).
 - Generated `.h5` files, notebook checkpoints, and local virtual-environment files should not be committed (only done so here in a dedicated `results` section to give examples).
 - Clear notebook outputs before committing unless they are intentionally included as final demonstration results.
 
